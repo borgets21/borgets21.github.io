@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Portfolio</title>
+    <link rel="stylesheet" href="/style/home-style/style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <img
+          id="mobile-openav"
+          class="mobile-menu"
+          src="/style/images/sandwich-menu.png"
+          alt="Open Navigation"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="/style/images/exit-menu2.png"
+            alt="Close Menu"
+          />
+          <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="main-cta">
+      <div class="container">
+        <div class="main-content">
+          <h1 class="my-name">Gabriel Zilli</h1>
+          <h2>Software Developer</h2>
+          <div class="curriculum-cta">
+            <a href="#" class="curriculum">Curriculum</a>
+          </div>
+          <div class="mypages-cta">
+            <a class="linkedin-cta" href="#"
+              ><img src="/style/images/linkedin-logo.png" alt="Open Linkedin"
+            /></a>
+            <a
+              class="github-cta"
+              href="https://github.com/borgets21"
+              target="_blank"
+              ><img src="/style/images/github-logo.png" alt="Open Github"
+            /></a>
+            <a class="email-cta" href="#"
+              ><img src="/style/images/email-logo.png" alt="Send E-mail"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileOpen = document.getElementById("mobile-openav");
+      const mobileExit = document.getElementById("mobile-exit");
+      const nav = document.querySelector("nav");
+
+      mobileOpen.addEventListener("click", () => {
+        nav.style.display = "block";
+      });
+      mobileExit.addEventListener("click", () => {
+        nav.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
